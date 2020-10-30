@@ -1,0 +1,44 @@
+{
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"usingComponents": {
+					"uInput": "/wxcomponents/poiuy-applet-uinput/uinput"
+				}
+			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				// "navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/period/period",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"tabBar": {
+		"position": "bottom",
+		// "backgroundColor": "#4593f7",
+		// "color": "#F2F6FC",
+		// "selectedColor": "#F2F6FC",
+		"list": [{
+				"pagePath": "pages/period/period",
+				"text": "评分"
+			},
+			{
+				"pagePath": "pages/index/index",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "评分系统",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	}
+}

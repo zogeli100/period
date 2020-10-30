@@ -1,0 +1,292 @@
+/* control/uinput.wxss */
+
+textarea,
+.con-input {
+	padding: 10rpx 20rpx 10rpx 40rpx;
+	border: 1rpx solid #D4D4D4;
+	border-radius: 10rpx;
+	color: #707070;
+	font-size: 28rpx;
+	width: auto;
+	z-index: 0;
+}
+
+.error-tip {
+	font-size: 26rpx;
+	color: #de0000;
+	position: absolute;
+}
+
+.input-view {
+	margin-bottom:50rpx;
+}
+
+.standard-bottom {
+	border: none;
+	/* border-bottom: 1px solid #c0c0c0; */
+	width: 100%;
+	padding: 0 60rpx 0 1px;
+	font-size: 30rpx;
+	height: 70rpx;
+	transition: all .5s;
+	line-height: 70upx;
+	color: #707070;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.verify-code{
+	padding: 0 50% 0 1px;
+}
+
+.standard-bottom-line {
+	position: absolute;
+	height: 1px;
+	bottom: 0;
+	width: 100%;
+	background-color: #EEEEEE;
+}
+
+.ani-left {
+	left: 0%;
+	animation: left 1.5s;
+}
+
+.ani-center {
+	left: 0%;
+	animation: center 1.5s;
+}
+
+.ani-right {
+	right: 0%;
+	animation: left 1.5s;
+}
+
+
+@keyframes left {
+	0% {
+		background-color: #c0c0c0;
+		width: 0;
+	}
+
+	100% {
+		background-color: #EEEEEE;
+		width: 100%;
+	}
+}
+
+@keyframes center {
+	0% {
+		background-color: #c0c0c0;
+		width: 0;
+		left: 50%;
+	}
+
+	100% {
+		background-color: #EEEEEE;
+		width: 100%;
+		left: 0%;
+	}
+}
+
+.input-icon{
+	font-size: 36rpx;
+	color: #C1C1C1;
+	position: absolute;
+	right: 10rpx;
+	bottom: 10%;
+	transition: all .3s;
+	z-index: 99;
+}
+
+.input-icon-border{
+	font-size: 36rpx;
+	color: #C1C1C1;
+	position: absolute;
+	right: 10rpx;
+	bottom: 30%;
+	transition: all .3s;
+	z-index: 99;
+}
+
+.error {
+	border: 1px solid #ad1212 !important;
+}
+
+.success {
+	border: 2.1739upx solid #008000 !important;
+}
+
+.standard-bottom-error {
+	border-bottom: 1px solid #ad1212 !important;
+}
+
+.standard-bottom-success {
+	border-bottom: 1px solid #008000 !important;
+}
+
+.get-code{
+	position: absolute;
+	right: 0;
+	bottom: 20%;
+	font-size: 28rpx;
+	color: rgb(136, 136, 136);
+	line-height: 35rpx;
+	margin-right: 10rpx;
+	border-left: 1px solid #f3f3f3;
+	width: 30%;
+	text-align: right;	
+}
+
+.geting{
+	position: absolute;
+	right: 0;
+	bottom: 20%;
+	font-size: 28rpx;
+	line-height: 35rpx;
+	margin-right: 10rpx;
+	border-left: 1px solid #f3f3f3;
+	width: 30%;
+	text-align: right;	
+	color:#c1c1c1;
+}
+
+
+.box{
+  border:1rpx solid #EEEEEE;
+  height: 100rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.box>label{
+  color: #101010;
+  width: 25%;
+  text-align: right;
+  padding-right: 20rpx;
+  border-right: 1rpx solid #E2E2E2;
+  font-size: 28rpx;
+  font-family: PingFangSC-regular;
+}
+
+.box >input{
+    font-size: 28rpx;
+		width: 62%;
+		margin-left: 3%;
+}
+
+.placeholder{
+  font-size: 26rpx;
+  color: #999999;
+}
+
+.icon-xiayibu{
+  width: 8%;
+  color: #999999;
+  font-size: 40rpx;
+}
+
+	.rel {
+		position: relative;
+	}
+
+	.w-100 {
+		width: 100% !important;
+	}
+
+	.flex {
+		/* 转为弹性盒模型*/
+		display: flex;
+	}
+
+	.flex_bet {
+		/* 两端左右*/
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.flex_wrap {
+		/* 转为弹性盒模型并自动换行*/
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.flex_inline {
+		/* 转为行内弹性盒模型*/
+		display: inline-flex;
+	}
+
+	.flex_y_start {
+		/* 垂直顶部对齐*/
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.flex_x_start {
+		/* 垂直顶部对齐*/
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.flex_x_center {
+		/* x轴对齐*/
+		display: flex;
+		justify-content: center;
+	}
+
+	.flex_y_center {
+		/* y轴对齐*/
+		display: flex;
+		align-items: center;
+	}
+
+	.flex_y_end {
+		/* 垂直底部对齐*/
+		display: flex;
+		align-items: flex-end;
+	}
+
+	/*
+	* 完全居中
+	*/
+	.flex_xy_center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.flex_tb {
+		/* 垂直两端对齐*/
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.flex_tb_c {
+		/* 多行垂直两端对齐，水平居中*/
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.flex_line_xy_center {
+		/* 多行垂直居中，水平居中*/
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.flex_line_y_center {
+		/* 多行垂直居中，*/
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.flex_line_end {
+		/* 多行垂直起点在下沿*/
+		display: flex;
+		flex-direction: column-reverse;
+	}
